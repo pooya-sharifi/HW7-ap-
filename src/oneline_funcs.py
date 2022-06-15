@@ -63,22 +63,23 @@ def commonCharacterCount(s1, s2):
 d = commonCharacterCount("zzzz", "zzzzzzz")
 # d = commonCharacterCount("aabcc", "adcaa")
 print(d)
-# def areSimilar(A, B):
-#     # for i in range(0, len(A)):
-#     #     for j in range(0, len(A)):
-#     # A[1], A[2] = A[2], A[1]
-#     # return A
-#     # i = 1
-#     # j = 2
-#     # return ["".join(set(A[:i])), A[i], "".join(set(A[i + 1 : j])), A[j]]
-#     # return [(A[:i], A[i], A[:j], A[j]) == B for i in range(0, len(A)) for j in range(0, len(A))]
-#     return[A[i] for i in range(0,len(A))]
 
 
-# d = areSimilar([1, 2, 3], [1, 2, 3])
-# print(d)
+def areSimilar(A, B):
+    # print(
+    #     "****",
+    #     sum(sort(A) == sort(B)) / len(A) + sum([a != b for a, b in zip(A, B)]),
+    #     sum(3 and 2),
+    # )
+    return sorted(A) == sorted(B) and sum([a != b for a, b in zip(A, B)]) <= 2
 
-# def palindromeRearranging(inputString):
+
+def palindromeRearranging(inputString):
+    return sum([inputString.count(i) % 2 for i in set(inputString)]) <= 1
+
+
+d = palindromeRearranging("aabb")
+print(d)
 
 
 def arrayReplace(inputArray, elemToReplace, substitutionElem):

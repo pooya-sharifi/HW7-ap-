@@ -130,55 +130,63 @@ class Test(unittest.TestCase):
     def test_commonCharacterCount5(self):
         self.assertEqual(f.commonCharacterCount("a", "aaa"), 1)
 
-    # ## ---------------- areSimilar ----------------
-    # def test_areSimilar1(self):
-    #     self.assertEqual(f.areSimilar([1, 2, 3], [1, 2, 3]), True)
+    ## ---------------- areSimilar ----------------
+    def test_areSimilar1(self):
+        self.assertEqual(f.areSimilar([1, 2, 3], [1, 2, 3]), True)
 
-    # def test_areSimilar2(self):
-    #     self.assertEqual(f.areSimilar([1, 2, 3], [2, 1, 3]), True)
+    def test_areSimilar2(self):
+        self.assertEqual(f.areSimilar([1, 2, 3], [2, 1, 3]), True)
 
-    # def test_areSimilar3(self):
-    #     self.assertEqual(f.areSimilar([1, 2, 2], [2, 1, 1]), False)
+    def test_areSimilar3(self):
+        self.assertEqual(f.areSimilar([1, 2, 2], [2, 1, 1]), False)
 
-    # def test_areSimilar4(self):
-    #     self.assertEqual(f.areSimilar([1, 1, 4], [1, 2, 3]), False)
+    def test_areSimilar4(self):
+        self.assertEqual(f.areSimilar([1, 1, 4], [1, 2, 3]), False)
 
-    # def test_areSimilar5(self):
-    #     self.assertEqual(f.areSimilar([1, 2, 3], [1, 10, 2]), False)
+    def test_areSimilar5(self):
+        self.assertEqual(f.areSimilar([1, 2, 3], [1, 10, 2]), False)
 
-    # def test_areSimilar6(self):
-    #     self.assertEqual(f.areSimilar([2, 3, 1], [1, 3, 2]), True)
+    def test_areSimilar6(self):
+        self.assertEqual(f.areSimilar([2, 3, 1], [1, 3, 2]), True)
 
-    # def test_areSimilar7(self):
-    #     self.assertEqual(f.areSimilar([2, 3, 9], [10, 3, 2]), False)
+    def test_areSimilar7(self):
+        self.assertEqual(f.areSimilar([2, 3, 9], [10, 3, 2]), False)
 
-    # def test_areSimilar8(self):
-    #     self.assertEqual(f.areSimilar([832, 998, 148, 570, 533, 561, 894, 147, 455, 279], [832, 998, 148, 570, 533, 561, 455, 147, 894, 279]), True)
+    def test_areSimilar8(self):
+        self.assertEqual(
+            f.areSimilar(
+                [832, 998, 148, 570, 533, 561, 894, 147, 455, 279],
+                [832, 998, 148, 570, 533, 561, 455, 147, 894, 279],
+            ),
+            True,
+        )
 
-    # ## ---------------- palindromeRearranging ----------------
-    # def test_palindromeRearranging1(self):
-    #     self.assertEqual(f.palindromeRearranging("aabb"), True)
+    ## ---------------- palindromeRearranging ----------------
+    def test_palindromeRearranging1(self):
+        self.assertEqual(f.palindromeRearranging("aabb"), True)
 
-    # def test_palindromeRearranging2(self):
-    #     self.assertEqual(f.palindromeRearranging("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc"), False)
+    def test_palindromeRearranging2(self):
+        self.assertEqual(
+            f.palindromeRearranging("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaabc"), False
+        )
 
-    # def test_palindromeRearranging3(self):
-    #     self.assertEqual(f.palindromeRearranging("abbcabb"), True)
+    def test_palindromeRearranging3(self):
+        self.assertEqual(f.palindromeRearranging("abbcabb"), True)
 
-    # def test_palindromeRearranging4(self):
-    #     self.assertEqual(f.palindromeRearranging("zyyzzzzz"), True)
+    def test_palindromeRearranging4(self):
+        self.assertEqual(f.palindromeRearranging("zyyzzzzz"), True)
 
-    # def test_palindromeRearranging5(self):
-    #     self.assertEqual(f.palindromeRearranging("z"), True)
+    def test_palindromeRearranging5(self):
+        self.assertEqual(f.palindromeRearranging("z"), True)
 
-    # def test_palindromeRearranging6(self):
-    #     self.assertEqual(f.palindromeRearranging("zaa"), True)
+    def test_palindromeRearranging6(self):
+        self.assertEqual(f.palindromeRearranging("zaa"), True)
 
-    # def test_palindromeRearranging7(self):
-    #     self.assertEqual(f.palindromeRearranging("abca"), False)
+    def test_palindromeRearranging7(self):
+        self.assertEqual(f.palindromeRearranging("abca"), False)
 
-    # def test_palindromeRearranging8(self):
-    #     self.assertEqual(f.palindromeRearranging("abcad"), False)
+    def test_palindromeRearranging8(self):
+        self.assertEqual(f.palindromeRearranging("abcad"), False)
 
     # ---------------- arrayReplace ----------------
     def test_arrayReplace1(self):
